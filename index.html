@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#020207">
+  <title>Neon Crystal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Landing / Hero Page -->
+  <section id="hero" class="hero" aria-labelledby="hero-title">
+    <div class="hero-grid"></div>
+    <div class="hero-orb orb-one"></div>
+    <div class="hero-orb orb-two"></div>
+
+    <div class="floating-crystals" aria-hidden="true">
+      <span class="crystal crystal-one"></span>
+      <span class="crystal crystal-two"></span>
+      <span class="crystal crystal-three"></span>
+      <span class="crystal crystal-four"></span>
+    </div>
+
+    <div class="hero-content">
+      <div class="eyebrow"><span></span> Interactive Crystal Experience <span></span></div>
+
+      <h1 id="hero-title" class="neon-title" data-text="NEON CRYSTAL">
+        NEON <span>CRYSTAL</span>
+      </h1>
+
+      <p class="hero-copy">
+        Enter a glowing world of motion, light and prismatic crystal bursts.
+        Move your cursor, click anywhere, and watch the neon energy explode.
+      </p>
+
+      <button id="enterBtn" class="enter-btn" type="button">
+        <span class="btn-glow"></span>
+        <span class="btn-text">CLICK ME</span>
+        <span class="btn-arrow">→</span>
+      </button>
+
+      <p class="micro-copy">Move • Click • Explore</p>
+    </div>
+
+    <div class="scroll-mark" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- Your existing Crystal Burst project -->
+  <main id="experience" class="experience" aria-hidden="true">
+    <canvas id="c"></canvas>
+    <div id="hint">
+      move your mouse &nbsp;·&nbsp; then click
+      <span>the crystals fly the way you move</span>
+    </div>
+    <div id="hud">bursts <b id="n">0</b></div>
+
+    <button id="backBtn" class="back-btn" type="button" aria-label="Back to Neon Crystal home">
+      ← HOME
+    </button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
